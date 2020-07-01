@@ -106,6 +106,7 @@ app.use('/ext/coinsview/:hash', function(req,res){
           }
         var c_ext = {
             address: req.params['hash'],
+            balanceSpendable: balance_spendable + balance_timelocked,
             spendable: balance_spendable,
             timelocked: balance_timelocked,
             height: stats.count,
