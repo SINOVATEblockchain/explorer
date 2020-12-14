@@ -8364,3 +8364,32 @@ a.list-group-item-danger.active:focus {
 .popover-title {
     border: none
 }
+
+.panel-heading strong {
+    font-size: 25px !important;
+font-weight:bold;
+}
+
+body{
+  font: 16px "Open Sans", Helvetica, Arial, sans-serif !important;
+font-weight:900 !important;}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+.search{
+width:30vw;
+}
+
+
+#index-search {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1370px) {
+#index-search {
+    width: 100%;
+}
+  }
+}
