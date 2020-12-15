@@ -8392,4 +8392,45 @@ width:30vw;
     width: 100%;
 }
   }
+
+@media screen and (min-width: 1800px) {
+#index-search {
+    margin-left: 70%;
+}
+  }
+
+.panel-heading {
+    padding: 6px !important;
+}
+
+td span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px !important;
+}
+
+.buttons-html5 {
+    background: #0FADB9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+height: 35px;
+}
+
+.buttons-html5 span {
+    padding: 5px;
+}
+
+div#hco-table_info {
+    border-top: 1px solid white;
+    color: #0fadb9;
+}
+
+a.paginate_button {
+    padding: 5px;
+    color: white;
+}
+
+a.paginate_button.current {
+    color: #0fadb9;
 }
