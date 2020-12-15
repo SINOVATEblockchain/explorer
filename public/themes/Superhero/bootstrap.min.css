@@ -8392,4 +8392,13 @@ width:30vw;
     width: 100%;
 }
   }
+
+@media screen and (min-width: 1800px) {
+#index-search {
+    margin-left: 70%;
+}
+  }
+
+.panel-heading {
+    padding: 6px !important;
 }
