@@ -8408,3 +8408,29 @@ td span {
     font-weight: 700;
     font-size: 14px !important;
 }
+
+.buttons-html5 {
+    background: #0FADB9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+height: 35px;
+}
+
+.buttons-html5 span {
+    padding: 5px;
+}
+
+div#hco-table_info {
+    border-top: 1px solid white;
+    color: #0fadb9;
+}
+
+a.paginate_button {
+    padding: 5px;
+    color: white;
+}
+
+a.paginate_button.current {
+    color: #0fadb9;
+}
