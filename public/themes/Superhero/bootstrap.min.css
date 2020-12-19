@@ -8365,7 +8365,10 @@ a.list-group-item-danger.active:focus {
     border: none
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2967fad156d97e937d8947b31e96eb3382803853
 .panel-heading strong {
     font-size: 25px !important;
 font-weight:bold;
@@ -8394,24 +8397,6 @@ width:30vw;
 }
   }
 
-
-@media screen and (min-width: 1800px) {
-#index-search {
-    margin-left: 70%;
-}
-  }
-
-.panel-heading {
-    padding: 6px !important;
-}
-
-td span {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 14px !important;
-}
-
-
 .buttons-html5 {
     background: #0FADB9;
     border: none;
@@ -8436,4 +8421,3 @@ a.paginate_button {
 
 a.paginate_button.current {
     color: #0fadb9;
-}
