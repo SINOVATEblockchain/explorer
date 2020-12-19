@@ -59,7 +59,7 @@ block content
             $("#barTxStatsNumber").text('');
             plot3 = $.jqplot('barTxStatsNumber', [nTx], {
                    title: 'Transactions per day',
-                   seriesColors:['#BB9038'],
+                   seriesColors:['#2E3191'],
                    grid: {drawGridlines: false, borderColor: 'transparent', shadow: false, drawBorder: false, shadowColor: 'transparent'},
                    seriesDefaults: {
                      renderer:$.jqplot.BarRenderer
@@ -119,7 +119,7 @@ block content
                     max: 200,
                     background: '#011567',
                     intervals:[50, 100, 150, 200],
-                    intervalColors:['#00FF00', '#228B22', '#BB9038', '#F5332F']
+                    intervalColors:['#2E3191', '#0FADB9', '#CDAD0E', '#A56736']
                 }
               }
             });
@@ -130,9 +130,9 @@ block content
             var totalHCO = json.hco_3m + json.hco_6m + json.hco_12m;
             var HCO = $.jqplot('pieChart', [dataHCO],
               {
-                 title: 'Hold Coin Offering: ' + totalHCO + ' $SIN',
+                 title: 'HODL Coin Offering: ' + totalHCO + ' $SIN',
                  grid: {background: 'transparent'},
-                 seriesColors: [ "#FF0000", "#FF8000", "#FFBF00"],
+                 seriesColors: [ "#0FADB9", "#A56736", "#2E3191"],
                  series: [{
                    renderer: $.jqplot.PieRenderer,
                    rendererOptions: {
@@ -149,7 +149,8 @@ block content
                     show: true, placement: "outsideGrid",
                     rendererOptions: {
                       numberRows: 2,
-                      border: 'none'
+                      border: 'none',
+                      background: 'transparent'
                     },
                     location: 's'
                  }
@@ -177,7 +178,7 @@ block content
             .panel-heading
               strong #{settings.locale.network}
             .panel-body
-              table.table.table-bordered.summary-table(style='background-color: rgba(0, 2, 59, 1);border-radius:10px;font-weight:bold;color:white;border:none !important;')
+              table.table.table-bordered.summary-table(style='background-color: rgba(0, 2, 59, 1);border-radius:10px;color:white;border:none !important;')
                 tbody
                   tr
                     td
@@ -219,7 +220,7 @@ block content
             .panel-heading
               strong #{settings.locale.addresses_stat}
             .panel-body
-              table.table.table-bordered.summary-table(style='background-color: rgba(0, 2, 59, 1);border-radius:10px;font-weight:bold;color:white;border:none !important;')
+              table.table.table-bordered.summary-table(style='background-color: rgba(0, 2, 59, 1);border-radius:10px;color:white;border:none !important;')
                 tbody
                   tr
                     td
@@ -246,7 +247,7 @@ block content
             .panel-heading
               strong #{settings.locale.burn_stat}
             .panel-body
-              table.table.table-bordered.summary-table(style='background-color: rgba(0, 2, 59, 1);border-radius:10px;font-weight:bold;color:white;border:none !important;')
+              table.table.table-bordered.summary-table(style='background-color: rgba(0, 2, 59, 1);border-radius:10px;color:white;border:none !important;')
                 tbody
                   tr
                     td
@@ -273,7 +274,7 @@ block content
             .panel-heading
               strong #{settings.locale.infinitynode_stat}
             .panel-body
-              table.table.table-bordered.summary-table(style='background-color: rgba(0, 2, 59, 1);border-radius:10px;font-weight:bold;color:white;border:none !important;')
+              table.table.table-bordered.summary-table(style='background-color: rgba(0, 2, 59, 1);border-radius:10px;color:white;border:none !important;')
                 tbody
                   tr  
                     td
@@ -339,7 +340,7 @@ block content
            br
            br
            div.row(id="mapcontainer" align="center" style="background-color: transparent ;border-radius:10px;font-weight:bold;color:white;border:none !important;")
-             h1 Decentralized Data Center
+             h1 <b>Decentralized Data Center</b>
              br
              br
            link(rel='stylesheet', href='/stylesheets/worldmap.v1.css')
@@ -422,4 +423,3 @@ block content
          .row.text-center
            center
              div(style='width:350px;height:350px;margin:0px;background-color: transparent;border-radius:10px;font-weight:bold;color:white;border:none !important;')#pieChart
-
