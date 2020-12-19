@@ -46,8 +46,16 @@ mongoose.connect(dbString,{ useNewUrlParser: true, useUnifiedTopology: true }, f
        }
        var ip="0.0.0.0";
        var publickey="";
+       var splitString = noEmptyData[11].split(':');
        if (noEmptyData[11] != "[::]:0"){
-              ip = noEmptyData[11].split(':')[0];
+           if (splitString[splitString.length -1] == '20970' || splitString[splitString.length -1] == '20980') {
+             if (noEmptyData[11].substring(0,1) == '[' && noEmptyData[11].substring(noEmptyData[11].length - 7, noEmptyData[11].length - 6) == ']') {
+               ip = noEmptyData[11].substring(1, noEmptyData[11].length - 7)
+             } else { ip = noEmptyData[11].substring(0, noEmptyData[11].length - 6); }
+           }
+           if (splitString[splitString.length -1] == '0') {
+             ip = noEmptyData[11].substring(0, noEmptyData[11].length - 2);
+           }
        }
        if (noEmptyData[10] != "NodeAddress"){
               publickey = noEmptyData[10];
@@ -83,7 +91,7 @@ mongoose.connect(dbString,{ useNewUrlParser: true, useUnifiedTopology: true }, f
             }
           } else {
             // node does not exist => create new node
-            console.log("Add " + burntx);
+            console.log("Add: ip: " + ip + " port:" + splitString[splitString.length -1] + ", id"  + burntx);
             db.create_infnode({
               burntx: burntx,
               address: noEmptyData[0],
