@@ -46,6 +46,10 @@ sleep 5
 
 sleep 5
 
+/usr/bin/nodejs --stack-size=35000 scripts/statsFromMongoDB.js hco
+
+sleep 5
+
 /usr/bin/nodejs --stack-size=35000 scripts/statsCountryNodes.js
 
 sleep 5
