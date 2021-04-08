@@ -1,5 +1,5 @@
 Iquidus Explorer - 1.6.1
-Modified for SUQA
+Modified for SINOVATE
 ================
 
 
